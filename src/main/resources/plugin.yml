@@ -9,4 +9,4 @@ commands:
   spawn:
     description: Switch your gamemode
     usage: /<command>
-    permission: gamemode.gm
+    permission: gm.gamemode
