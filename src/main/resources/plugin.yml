@@ -1,0 +1,12 @@
+name: gm
+version: '${project.version}'
+main: cf.pepepper.gm.Gm
+api-version: 1.15
+authors: [ yude ]
+description: Define custom permission to switch gamemode
+website: https://ecri.pepepper.cf
+commands:
+  spawn:
+    description: Switch your gamemode
+    usage: /<command>
+    permission: gamemode.gm
