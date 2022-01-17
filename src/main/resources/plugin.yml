@@ -6,7 +6,7 @@ authors: [ yude ]
 description: Define custom permission to switch gamemode
 website: https://ecri.pepepper.cf
 commands:
-  spawn:
+  gm:
     description: Switch your gamemode
-    usage: /<command>
+    usage: /<command> <gamemode>
     permission: gm.gamemode
