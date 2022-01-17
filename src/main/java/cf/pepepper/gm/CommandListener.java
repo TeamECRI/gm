@@ -13,9 +13,7 @@ public class CommandListener implements CommandExecutor {
             return false;
         } else {
             Player player = (Player) sender;
-            if (args[0].isEmpty()) {
-                player.sendMessage("§cゲームモードを指定してください。");
-            } else {
+            if (args.length > 0) {
                 if (sender.hasPermission("gm.gamemode")) {
                     if (args[0].equalsIgnoreCase("survival")) {
                         player.setGameMode(GameMode.SURVIVAL);
@@ -31,6 +29,8 @@ public class CommandListener implements CommandExecutor {
                 } else {
                     player.sendMessage("§cコマンドを実行する権限がありません。");
                 }
+            } else {
+                player.sendMessage("§cゲームモードを指定してください。");
             }
         }
         return true;
